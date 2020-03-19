@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 bool test(const std::function<void(const std::vector<int> &, std::vector<int> &)>& f, const std::vector<int> &a, std::vector<int> &b, const std::vector<int>& expected) {
+    f(a, b);
     return expected == b;
 }
 
